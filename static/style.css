@@ -1,0 +1,185 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:"Quicksand", sans-serif;
+}
+
+html, body{
+  height: 100%;
+  font-size:62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  color: #eee;
+}
+
+/* Add or modify these styles */
+nav {
+  width: 100%;
+  background-color: #167e56;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  height: 5.5rem; /* Adjust the height as needed */
+  margin-right: 1rem;
+}
+
+nav h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #eee;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+
+ .container{
+  width: 100%;
+  height: 100vh;
+  padding-left: 10rem;
+  background-color: #eee;
+  color: #eee;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+}
+
+.right-side {
+  flex: 1; 
+  padding: 5rem;
+  font-size: 1rem;
+  color: #333;
+  overflow-y: auto; 
+}
+
+
+
+.calendar{
+  width: 45rem;
+  height: 52rem;
+  background-color: #222227;
+  box-shadow: 0 0.5rem 3rem rgba(0,0,0,0.4);
+}
+
+.month{
+  width: 100%;
+  height: 12rem;
+  background-color: #167e56;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 0.2rem;
+  text-align:center;
+  text-shadow:0 .3rem .5rem rgba(0,0,0,0.5);
+}
+
+.month i{
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1{
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p{
+  font-size: 1.6rem;
+
+}
+
+.weekdays {
+  width: 100%;
+  height: 5rem;
+  padding: 0 0 0.4rem;
+  display: flex;
+  align-items:center
+}
+
+.weekdays div{
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(44.2rem/7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+
+.days div{
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  width: calc(40.2rem/7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+}
+
+.days div:hover:not(.today){
+  background-color: #262626;
+  border: 0.2rem solid #7777;
+  cursor: pointer;
+
+}
+
+.prev-date,
+.next-date{
+  opacity: 0.5
+
+}
+
+.today{
+  background-color: #167e56;
+}
+
+/* Add this to your existing CSS */
+.loading-spinner {
+  display: none;
+  position: fixed;
+  bottom: 0; /* Adjust the distance from the bottom */
+  right: 0; /* Adjust the distance from the right */
+  background-color: #eee; /* Match the background color of the window */
+  padding: 20px; /* Increase the size of the loading spinner */
+  
+}
+
+.loading-spinner img {
+  width: 60px; /* Increase the width as needed */
+  height: auto;
+}
+
+.loading-spinner p {
+  margin-bottom: 0.1rem;
+  font-size: 14px;
+  color: #333;
+}
+
+
+
+
